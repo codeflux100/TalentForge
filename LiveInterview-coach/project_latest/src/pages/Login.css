@@ -1,0 +1,239 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Full Page */
+body {
+  background: #0b0b0f;
+}
+
+/* Main Container */
+.container {
+  width: 1100px;
+  height: 650px;
+  margin: auto;
+  margin-top: 40px;
+
+  display: flex;
+  border-radius: 16px;
+  overflow: hidden;
+
+  background: #000;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+/* ================= LEFT SIDE ================= */
+.left {
+  width: 50%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  color: white;
+
+  background: radial-gradient(circle at top left, #7c3aed, transparent 40%),
+              radial-gradient(circle at bottom right, #2563eb, transparent 50%),
+              #111;
+}
+
+/* Blur overlay for glass effect */
+.left::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(40px);
+}
+
+/* Content inside left */
+.left-content {
+  position: relative;
+  z-index: 2;
+}
+
+.left-content h1{
+    font-size: 3rem;
+    line-height: 1.4;
+    font-family: 'myFirstFont', sans-serif;
+    color: #bc79e9;
+}
+
+@font-face {
+    font-family: 'myFirstFont';
+    src: url('./Heqra-KV8nA.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.left h2 {
+  font-size: 28px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.left p {
+  color: #bbb;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* Feature boxes */
+.steps div {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.steps div:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.steps .active {
+  background: white;
+  color: black;
+  font-weight: 600;
+}
+
+/* ================= RIGHT SIDE ================= */
+.right {
+  width: 50%;
+  padding: 50px;
+  background: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Heading */
+.right h2 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.right p {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Social buttons */
+.social {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.social button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social button:hover {
+  border-color: #777;
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #555;
+  font-size: 13px;
+}
+
+/* Inputs */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+
+  border-radius: 8px;
+  border: none;
+
+  background: #111;
+  color: white;
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.input-group input::placeholder {
+  color: #666;
+}
+
+/* Focus effect */
+.input-group input:focus {
+  box-shadow: 0 0 0 1px #7c3aed;
+  background: #151515;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+
+  margin-top: 10px;
+
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.4);
+}
+
+/* Footer */
+.footer {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #777;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.link {
+  color: #7c3aed;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
